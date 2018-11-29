@@ -15,6 +15,8 @@
 		AC21B10621AFDA9B00D413F0 /* HZTBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC21B10521AFDA9B00D413F0 /* HZTBaseViewController.swift */; };
 		AC21B10821AFDAB600D413F0 /* HZTBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC21B10721AFDAB600D413F0 /* HZTBaseNavigationController.swift */; };
 		AC21B10A21AFDAD700D413F0 /* HZTBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC21B10921AFDAD700D413F0 /* HZTBaseModel.swift */; };
+		ACA0865621AFE99700AFAD1B /* HZTLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA0865521AFE99700AFAD1B /* HZTLoginViewController.swift */; };
+		ACA0865821AFEC4B00AFAD1B /* Login.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA0865721AFEC4B00AFAD1B /* Login.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		AC21B10521AFDA9B00D413F0 /* HZTBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZTBaseViewController.swift; sourceTree = "<group>"; };
 		AC21B10721AFDAB600D413F0 /* HZTBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZTBaseNavigationController.swift; sourceTree = "<group>"; };
 		AC21B10921AFDAD700D413F0 /* HZTBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZTBaseModel.swift; sourceTree = "<group>"; };
+		ACA0865521AFE99700AFAD1B /* HZTLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HZTLoginViewController.swift; sourceTree = "<group>"; };
+		ACA0865721AFEC4B00AFAD1B /* Login.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Login.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 				AC21B0E721AFD96A00D413F0 /* ViewController.swift */,
 				AC21B0E921AFD96A00D413F0 /* Main.storyboard */,
 				AC21B0EC21AFD96B00D413F0 /* Assets.xcassets */,
+				ACA0865721AFEC4B00AFAD1B /* Login.xcassets */,
 				AC21B0EE21AFD96B00D413F0 /* LaunchScreen.storyboard */,
 				AC21B0F121AFD96B00D413F0 /* Info.plist */,
 				AC21B10B21AFDB1000D413F0 /* Macros */,
@@ -127,6 +132,7 @@
 		AC21B0FD21AFDA3000D413F0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ACA0865521AFE99700AFAD1B /* HZTLoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 				AC21B0F021AFD96B00D413F0 /* LaunchScreen.storyboard in Resources */,
 				AC21B0ED21AFD96B00D413F0 /* Assets.xcassets in Resources */,
 				AC21B0EB21AFD96A00D413F0 /* Main.storyboard in Resources */,
+				ACA0865821AFEC4B00AFAD1B /* Login.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +277,7 @@
 				AC21B0E621AFD96A00D413F0 /* AppDelegate.swift in Sources */,
 				AC21B10821AFDAB600D413F0 /* HZTBaseNavigationController.swift in Sources */,
 				AC21B10A21AFDAD700D413F0 /* HZTBaseModel.swift in Sources */,
+				ACA0865621AFE99700AFAD1B /* HZTLoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +429,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "haizitong.------Swift-";
+				PRODUCT_BUNDLE_IDENTIFIER = haizitong.Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -438,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "haizitong.------Swift-";
+				PRODUCT_BUNDLE_IDENTIFIER = haizitong.Swift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;

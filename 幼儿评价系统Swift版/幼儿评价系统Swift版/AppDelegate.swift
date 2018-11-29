@@ -13,8 +13,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    func getAppInfo(){
+        let mainBundle = Bundle.main
+        let identifier = mainBundle.bundleIdentifier
+        let info = mainBundle.infoDictionary
+        let bundleId = mainBundle.object(forInfoDictionaryKey: "CFBundleName")
+        let version = mainBundle.object(forInfoDictionaryKey:"CFBundleShortVersionString")
+        print("包名:\(identifier) 应用名称:\(bundleId) 版本号:\(version) 包信息:\(info)")
+    }
+    
+    func configWindow() {
+        let vc = HZTLoginViewController.init()
+        let rootNav = HZTBaseNavigationController.init(rootViewController: vc)
+        self.window?.rootViewController = rootNav
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        /**获取应用的配置项信息*/
+        self.getAppInfo()
+        self.configWindow()
         // Override point for customization after application launch.
         return true
     }
